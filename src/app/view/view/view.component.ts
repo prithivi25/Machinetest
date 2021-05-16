@@ -8,10 +8,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ViewComponent {
   selectedFile: File;
-  value: any;
   result: any;
   fileData: any = {};
-  header: string[];
   filename: string = ""
 
 
