@@ -1,0 +1,31 @@
+<div class="container">
+    <div class="form-module">
+        <form action="">
+            <div class="row">
+                <div class="col-sm-6 col-md-4 col-lg-2">
+                    <label>
+                        JSON URL
+                    </label>
+                </div>
+                <div class=" col-sm-6 col-md-4 col-lg-3">
+                    <input type="text" value={{filename}} disabled>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-2">
+                    <input type="file" id="actual-btn1" (change)="onFileChanged($event)" #fileInput hidden /><label
+                        for="actual-btn1" class="btn btn-browse">Browse</label>
+                    <span id="file-chosen"><a href="" target="_blank"></a></span>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="table-module">
+        <table>
+            <tr>
+                <th *ngFor="let head of fileData[0] | keys">{{head}}</th>
+            </tr>
+            <tr *ngFor="let item of fileData">
+                <td *ngFor="let list of item | keys">{{item[list]}}</td>
+            </tr>
+        </table>
+    </div>
+</div>

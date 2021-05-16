@@ -1,0 +1,29 @@
+.form-module{
+    margin: 5%  0;
+  }
+  .form-module input{
+  size:50;
+  }
+  
+  .btn-browse{
+    background-color: rgb(224, 220, 220);
+  }
+  .table-module{
+    height: 80vh;
+    overflow: auto;
+  }
+  table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  td, th {
+    border: 1px solid rgb(224, 220, 220);
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: rgb(224, 220, 220);
+  }
